@@ -59,7 +59,7 @@
         }
         .btn {
             display: inline-block;
-            margin-top: 20px;
+            margin-top: 10px;
             padding: 18px 40px;
             border-radius: 50px;
             background: #ff3333;
@@ -74,6 +74,13 @@
         .btn:hover {
             background: #ef2222;
             transform: scale(1.05);
+        }
+        .btn-youtube {
+            background: #ff0000;
+            margin-left: 10px;
+        }
+        .btn-youtube:hover {
+            background: #cc0000;
         }
         .features {
             display: grid;
@@ -122,6 +129,12 @@
         @media (max-width: 600px) {
             h1 { font-size: 42px; }
             .card { padding: 30px 20px; }
+            .btn { 
+                display: block; 
+                width: 100%; 
+                margin: 10px 0; 
+            }
+            .btn-youtube { margin-left: 0; }
         }
     </style>
 </head>
@@ -132,9 +145,12 @@
             <h1>GRAND CRIME LIFE 2027</h1>
             <p>Enter the city. Build your story. Explore a huge open world full of missions, cars, and action.</p>
             
-            <button class="btn" onclick="alert('Game is under development! Launch in 2027. Follow @grandcrimelife2027 for updates')">
+            <button class="btn" onclick="alert('Game is under development! Launch in 2027.')">
                 COMING 2027
             </button>
+            <a class="btn btn-youtube" href="https://youtube.com/@grandcrimelife2027" target="_blank">
+                SUBSCRIBE ON YOUTUBE
+            </a>
             
             <div class="features">
                 <div class="feature">
